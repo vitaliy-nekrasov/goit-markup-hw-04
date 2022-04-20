@@ -26,6 +26,7 @@
   --accent-color: #2196f3;
   --hero-background-color: #2f303a;
   --btn-text-color: #ffffff;
+  --border-color: #afb1b8;
   --team-background-color: #f5f4fa;
   --portfolio-btn-back-color: #f5f4fa;
   --border-color: #ececec;
@@ -63,7 +64,7 @@ body {
   padding-bottom: 32px;
 }
 .head .header-list:last-child {
-  margin-left: 331px;
+  margin-left: auto;
 }
 .link-logo {
   font-family: 'Raleway', sans-serif;
@@ -98,12 +99,19 @@ body {
 .portfolio {
   color: var(--accent-color);
 }
-
+.header-list .item {
+  display: flex;
+  justify-content: center;
+}
 /*########## MAIN ############*/
 /*########## HERO ############*/
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/overlay/overlay.jpg');
 }
 .hero-title {
   font-weight: 900;
@@ -172,6 +180,20 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+.back-icon-about {
+  width: 270px;
+  height: 120px;
+  background: var(--portfolio-btn-back-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-icon-about .icon-about {
+  width: 70px;
+  height: 70px;
+}
 /*########## OUR WORK ############*/
 .title {
   font-weight: 700;
@@ -239,11 +261,43 @@ body {
   margin-top: 0;
   margin-bottom: 30;
 }
+/*########## OUR CLIENTS ############*/
+.title-clients {
+  margin-bottom: 50px;
+}
+.list-clients {
+  display: flex;
+  justify-content: space-between;
+}
+.back-icon-clients {
+  width: 170px;
+  height: 92px;
+  background: var(--portfolio-btn-back-color);
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-icon-clients .icon-clients {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.icon-clients:hover,
+.icon-clients:focus {
+  fill: var(--accent-color);
+}
+.back-icon-clients:hover {
+  border-color: var(--accent-color);
+}
 /*########## FOOTER ############*/
+
 .footer {
   background-color: var(--hero-background-color);
 }
-.footer .container {
+.footer-address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -283,6 +337,28 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--btn-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 70px;
+}
+.footer-flex {
+  display: flex;
+}
+.social {
+  margin-top: 72px;
+}
+.www {
+  width: 44px;
+  height: 44px;
+  fill: #2196f3;
 }
 
 /*########## PORTFOLIO (PAGE) ############*/
