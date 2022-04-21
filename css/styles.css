@@ -27,6 +27,7 @@
   --hero-background-color: #2f303a;
   --btn-text-color: #ffffff;
   --border-color: #afb1b8;
+  --social-color: #afb1b8;
   --team-background-color: #f5f4fa;
   --portfolio-btn-back-color: #f5f4fa;
   --border-color: #ececec;
@@ -102,6 +103,17 @@ body {
 .header-list .item {
   display: flex;
   justify-content: center;
+}
+.icon-address {
+  display: flex;
+  align-items: center;
+}
+.icon-address .icon {
+  margin-right: 10px;
+  fill: var(--secondary-color);
+}
+.contact-link:hover > .icon {
+  fill: var(--accent-color);
 }
 /*########## MAIN ############*/
 /*########## HERO ############*/
@@ -190,10 +202,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-.back-icon-about .icon-about {
-  width: 70px;
-  height: 70px;
-}
 /*########## OUR WORK ############*/
 .title {
   font-weight: 700;
@@ -223,9 +231,7 @@ body {
 }
 .card {
   width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
+  height: 428px;
 
   background: var(--btn-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -261,6 +267,37 @@ body {
   margin-top: 0;
   margin-bottom: 30;
 }
+.card-social {
+  display: flex;
+  justify-content: center;
+}
+.icon-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.icon-back:hover,
+.icon-back:focus {
+  background-color: var(--accent-color);
+}
+.card-icon {
+  fill: var(--social-color);
+}
+.card-icon:hover,
+.card-icon:focus {
+  fill: var(--btn-text-color);
+}
+.list .icon-back + .icon-back {
+  margin-left: 10px;
+}
+.icon-back .card-icon {
+  box-sizing: content-box;
+  padding: 12px;
+}
 /*########## OUR CLIENTS ############*/
 .title-clients {
   margin-bottom: 50px;
@@ -281,9 +318,9 @@ body {
   justify-content: center;
 }
 .back-icon-clients .icon-clients {
-  width: 106px;
-  height: 60px;
   fill: #afb1b8;
+  box-sizing: content-box;
+  padding: 16px 32px;
 }
 .icon-clients:hover,
 .icon-clients:focus {
@@ -346,19 +383,29 @@ body {
   text-transform: uppercase;
   color: var(--btn-text-color);
   margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 70px;
+  margin-bottom: 20px;
 }
 .footer-flex {
   display: flex;
 }
 .social {
+  margin-left: 70px;
   margin-top: 72px;
+  display: flex;
+  flex-direction: column;
 }
-.www {
-  width: 44px;
-  height: 44px;
-  fill: #2196f3;
+.footer-icon {
+  display: flex;
+}
+.footer-icon .item + .item {
+  margin-left: 10px;
+}
+.icon {
+  fill: rgba(255, 255, 255, 0.1);
+}
+.icon:hover,
+.icon:focus {
+  fill: var(--accent-color);
 }
 
 /*########## PORTFOLIO (PAGE) ############*/
