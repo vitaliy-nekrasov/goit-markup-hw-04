@@ -83,8 +83,10 @@ body {
 .menu-link {
   color: var(--main-color);
 }
-.contact-link {
+.icon-address > .contact-link {
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -107,9 +109,6 @@ body {
 .icon-address {
   display: flex;
   align-items: center;
-}
-.icon-address {
-  display: flex;
 }
 .icon-address .icon {
   margin-right: 10px;
