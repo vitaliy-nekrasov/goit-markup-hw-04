@@ -33,6 +33,7 @@
   --border-color: #ececec;
   --portfolio-border-color: #eeeeee;
   --contacts-link-color: rgba(255, 255, 255, 0.6);
+  --color-social-footer: rgba(255, 255, 255, 0.1);
 }
 body {
   font-family: var(--main-font);
@@ -112,10 +113,9 @@ body {
 }
 .icon-address .icon {
   margin-right: 10px;
-  fill: var(--secondary-color);
 }
 .contact-link:hover > .icon {
-  fill: var(--accent-color);
+  --color-mail: var(--accent-color);
 }
 /*########## MAIN ############*/
 /*########## HERO ############*/
@@ -279,26 +279,14 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: transparent;
-  border-radius: 50%;
-}
-.icon-back:hover,
-.icon-back:focus {
-  background-color: var(--accent-color);
-}
-.card-icon {
-  fill: var(--social-color);
 }
 .card-icon:hover,
 .card-icon:focus {
-  fill: var(--btn-text-color);
+  --color-social: var(--btn-text-color);
+  --color-back: var(--accent-color);
 }
 .list .icon-back + .icon-back {
   margin-left: 10px;
-}
-.icon-back .card-icon {
-  box-sizing: content-box;
-  padding: 12px;
 }
 /*########## OUR CLIENTS ############*/
 .title-clients {
@@ -311,8 +299,7 @@ body {
 .back-icon-clients {
   width: 170px;
   height: 92px;
-  background: var(--portfolio-btn-back-color);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--social-color);
   box-sizing: border-box;
   border-radius: 4px;
   display: flex;
@@ -320,13 +307,12 @@ body {
   justify-content: center;
 }
 .back-icon-clients .icon-clients {
-  fill: #afb1b8;
   box-sizing: content-box;
-  padding: 16px 32px;
+  padding: 18px 34px;
 }
 .icon-clients:hover,
 .icon-clients:focus {
-  fill: var(--accent-color);
+  --color-clients: var(--accent-color);
 }
 .back-icon-clients:hover {
   border-color: var(--accent-color);
@@ -402,12 +388,9 @@ body {
 .footer-icon .item + .item {
   margin-left: 10px;
 }
-.icon {
-  fill: rgba(255, 255, 255, 0.1);
-}
 .icon:hover,
 .icon:focus {
-  fill: var(--accent-color);
+  --color-social-footer: var(--accent-color);
 }
 
 /*########## PORTFOLIO (PAGE) ############*/
