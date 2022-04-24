@@ -65,8 +65,11 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.head .header-list:last-child {
+.header-info {
   margin-left: auto;
+}
+.header-line {
+  display: flex;
 }
 .link-logo {
   font-family: 'Raleway', sans-serif;
@@ -205,6 +208,9 @@ body {
   justify-content: center;
 }
 /*########## OUR WORK ############*/
+.section-work {
+  padding-bottom: 94px;
+}
 .title {
   font-weight: 700;
   font-size: 36px;
