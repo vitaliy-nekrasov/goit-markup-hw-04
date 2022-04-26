@@ -101,10 +101,7 @@ body {
 .contact-link:focus {
   color: var(--accent-color);
 }
-.studio {
-  color: var(--accent-color);
-}
-.portfolio {
+.active {
   color: var(--accent-color);
 }
 .header-list .item {
