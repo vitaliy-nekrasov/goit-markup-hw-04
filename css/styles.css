@@ -115,7 +115,8 @@ body {
 .icon-address .icon {
   margin-right: 10px;
 }
-.contact-link:hover > .icon {
+.contact-link:hover > .icon,
+.contact-link:focus > .icon {
   --color-mail: var(--accent-color);
 }
 /*########## MAIN ############*/
@@ -127,6 +128,7 @@ body {
   padding-bottom: 200px;
   height: 600px;
   max-width: 1600px;
+  margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/overlay/overlay.jpg');
 }
@@ -279,18 +281,12 @@ body {
   justify-content: center;
   padding-bottom: 30px;
 }
-.icon-back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-}
-.card-icon:hover,
-.card-icon:focus {
+.social-link:hover > .card-icon,
+.social-link:focus > .card-icon {
   --color-social: var(--btn-text-color);
   --color-back: var(--accent-color);
 }
+
 .list .icon-back + .icon-back {
   margin-left: 10px;
 }
@@ -316,11 +312,12 @@ body {
   box-sizing: content-box;
   padding: 18px 34px;
 }
-.icon-clients:hover,
-.icon-clients:focus {
+.link-clients:hover .icon-clients,
+.link-clients:focus .icon-clients {
   --color-clients: var(--accent-color);
 }
-.back-icon-clients:hover {
+.back-icon-clients:hover,
+.back-icon-clients:focus {
   border-color: var(--accent-color);
 }
 /*########## FOOTER ############*/
@@ -330,10 +327,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* .footer-address {
-  padding-top: 60px;
-  padding-bottom: 60px;
-} */
 .link-logo-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -395,8 +388,8 @@ body {
 .footer-icon .item + .item {
   margin-left: 10px;
 }
-.icon:hover,
-.icon:focus {
+.social-link-footer:hover > .icon,
+.social-link-footer:focus > .icon {
   --color-social-footer: var(--accent-color);
 }
 
